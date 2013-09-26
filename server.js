@@ -1,5 +1,6 @@
 var reg_non_alphanumeric = /[^A-Za-z0-9]/;
 var reg_password = /^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$/
+var reg_email = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 var users = [
 	{
@@ -9,18 +10,32 @@ var users = [
 	{
 		username: 'conan',
 		password: 'gingertastic'
-	}
+	},
 	{
 		username: 'jerry',
 		password: '@#!$%@'
 	}
-]
+];
 
-codepen.api.signup(user) {
+codepen.api.signup = function(user) {
 
 	var response = {
-		success: false;
+		success: false,
 		error: ''
+	}
+
+	if (!user.name) {
+		response.error = 'Please provide a name';
+		return response;
+	}
+	if (!user.email) {
+		response.error = 'Please provide an email';
+		return response;
+	}
+
+	if (!reg_email.test(user.email)) {
+		response.error = 'Please provide a valid email address';
+		return response;
 	}
 
 	if (!user.username) {
@@ -54,10 +69,10 @@ codepen.api.signup(user) {
 	return response;
 }
 
-codepen.api.login(user) {
+codepen.api.login = function(user) {
 
 	var response = {
-		success: false;
+		success: false,
 		error: ''
 	}
 
@@ -71,7 +86,9 @@ codepen.api.login(user) {
 	}
 
 	$.each(users, function(index, stored_user) {
+		console.log("comparing",user,stored_user);
 		if (user.username == stored_user.username && user.password == stored_user.password) {
+			console.log("success!");
 			response.success = true;
 			response.error = '';
 			return false;
