@@ -1,0 +1,116 @@
+body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background: #333 url(img/classy_fabric.png);
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+	font-size: 13px;
+	padding-top: 195px;
+	height: 100%;
+	margin: 0;
+	color: white;
+}
+
+.container {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.header-logo img{
+	width: 242px;
+	height: 40px;
+}
+
+.form-modal {
+	border: 10px solid #76daff;
+	box-shadow: 0 0 60px rgba(0,0,0,0.5);position: static;
+	max-width: 520px;
+	width: 100%;
+	margin-top: 10px;
+	border-radius: 20px;
+	padding: 20px;
+	border-radius: 20px;
+	background: black;
+	text-align: left;
+}
+
+.form-modal nav {
+	font-size: 13px;
+	line-height: 1.4;
+	color: white;
+	border-bottom: 2px solid #999;
+	margin: 0 0 12px 0;
+	position: relative;
+}
+
+nav  a{
+	color: #76daff;
+	display: inline-block;
+	font-size: 1.2em;
+	outline: 0;
+	font-family: "HelveticaNeue-CondensedBold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+	padding: 3px 8px 5px 8px;
+	text-decoration: none;
+}
+
+nav a.active {
+	color: white;
+	border-bottom: 2px solid white;
+	position: relative;
+	top: 2px;
+}
+
+.form-row {
+	clear: both;
+	margin: 0 0 10px 0;
+}
+
+form label {
+	font-size: 13px;
+	line-height: 1.4;
+	display: block;
+	width: 35%;
+	float: left;
+	text-align: right;
+	padding: 2px 10px 0 0;
+	color: #eee;
+}
+
+form input {
+	border: 0;
+	padding: 5px;
+	width: 60%;
+	-webkit-appearance: none;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(100%, #ffffff));
+	background: -webkit-linear-gradient(#cccccc,#ffffff);
+	background: -moz-linear-gradient(#cccccc,#ffffff);
+	background: -o-linear-gradient(#cccccc,#ffffff);
+	background: linear-gradient(#cccccc,#ffffff);
+	outline: 0;
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+form button {
+	margin-left: 37%;
+	background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #81e058), color-stop(100%, #187a14));
+	background: -webkit-linear-gradient(#81e058,#187a14);
+	background: -moz-linear-gradient(#81e058,#187a14);
+	background: -o-linear-gradient(#81e058,#187a14);
+	background: linear-gradient(#81e058,#187a14);
+	box-shadow: 0 1px 0 #c3f993 inset;
+	display: inline-block;
+	border: 0;
+	outline: 0;
+	padding: 12px 16px;
+	line-height: 1.4;
+	border-radius: 5px;
+	border: 1px solid black;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+	color: white !important;
+	font-size: 1.2em;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-decoration: none !important;
+	cursor: pointer;
+}
