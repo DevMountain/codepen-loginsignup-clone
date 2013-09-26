@@ -25,7 +25,6 @@ Details:
 * When the user clicks "Sign up", your code should submit a user object to the `codepen.api.signup` method.
 * The method will return a response (see the comments). Handle the response appropriately, including showing validation errors.
 * If the response is successful, automatically take the user to the login form so they can login.
-* 
 
 ###Notes:
 This is obviously a fake server, and no data will persist. What this means is that if you 'signup' a user, they won't be there if you leave the page and come back or do a refresh.
