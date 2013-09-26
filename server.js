@@ -25,8 +25,16 @@ codepen.api.signup = function(user) {
 	}
 
 	if (!user.name) {
-		response.error = 'Please provide a name';
-		return response;
+		if (!user.hasOwnProperty('firstname')) {
+			response.error = 'Please provide a name';
+			return response;
+		}
+		else {
+			if (!user.firstname || !user.lastname) {
+				response.error = 'Please provide both a first name and last name';
+				return response;
+			}
+		}
 	}
 	if (!user.email) {
 		response.error = 'Please provide an email';
