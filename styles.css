@@ -90,7 +90,7 @@ form input {
 	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.3);
 }
 
-form button {
+button {
 	margin-left: 37%;
 	background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
 	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #81e058), color-stop(100%, #187a14));

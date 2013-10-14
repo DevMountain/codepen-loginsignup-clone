@@ -94,9 +94,7 @@ codepen.api.login = function(user) {
 	}
 
 	$.each(users, function(index, stored_user) {
-		console.log("comparing",user,stored_user);
 		if (user.username == stored_user.username && user.password == stored_user.password) {
-			console.log("success!");
 			response.success = true;
 			response.error = '';
 			return false;
@@ -105,3 +103,5 @@ codepen.api.login = function(user) {
 	});
 	return response;
 }
+
+codepen.objects = {};

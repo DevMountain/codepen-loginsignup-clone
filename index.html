@@ -3,6 +3,7 @@
 	<head>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
 		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script type="text/javascript" src="script.js"></script>
 		<script type="text/javascript">
 			codepen = window.codepen || {};
 			codepen.api = {};
@@ -19,26 +20,27 @@
 			<div class="form-modal">
 
 				<nav>
-					<a href="#" class="active">Login</a>
-					<a href="#">Sign Up</a>
+					<a href="#" class="login-form-btn active">Login</a>
+					<a href="#" class="signup-form-btn">Sign Up</a>
 				</nav>
 
 				<div class="login-form">
-					<form class="signup">
+					<form>
 						<div class="form-row">
-							<label for="login-email-field">Email</label>
-							<input id="login-email-field" name="email" type="text" />
+							<label for="login-username-field">Username</label>
+							<input id="login-username-field" name="username" type="text" />
 						</div>
 						<div class="form-row">
 							<label for="login-password-field">Password</label>
 							<input id="login-password-field" name="password" type="password" />
 						</div>
-						<button>Log in</button>
 					</form>
+					<div class="form-feedback"></div>
+					<button class="btn-login">Log in</button>
 				</div>
 
 				<div class="signup-form">
-					<form class="signup">
+					<form>
 						<div class="form-row">
 							<label for="signup-name-field">Name</label>
 							<input id="signup-name-field" name="name" type="text" placeholder="Johnny Sandwiches" />
@@ -61,8 +63,9 @@
 							<label for="signup-password-field">Password Again</label>
 							<input id="signup-password-field" name="password" type="password" />
 						</div>
-						<button>Sign up</button>
 					</form>
+					<div class="form-feedback"></div>
+					<button class="btn-signup">Sign up</button>
 				</div>
 
 			</div>
