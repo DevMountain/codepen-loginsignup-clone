@@ -7,7 +7,7 @@ codepen.api.signup(user_object)
 	parameters: user object, which contains properties: name, email, username, password
 	returns: response object
 
-codepen.login(user_object)
+codepen.api.login(user_object)
 	description: to login an existing user
 	parameters: user object, which contains properties: username, password
 	returns: response object
