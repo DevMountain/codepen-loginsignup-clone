@@ -65,3 +65,7 @@ Details:
 * Every time a user clicks on a new field, validate the field they were just on (research blur and focus events in jQuery to learn more about this)
 * If the field is invalid, tell the user.
 * If you want to go even further, have the validate method return a validation object with two properties: valid: true/false and error: (string) so you can display an error-specific message for each validation error on each field.
+
+## Copyright
+
+© DevMountain LLC, 2016. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
